@@ -101,103 +101,7 @@ textarea {
 
    body {
      font-family: 'Dosis', sans-serif;
-     color: #454545;
-     font-size: 20px;
-     background-color: white;
    }
-
-   header {
-     text-align: center;
-     color: gray;
-     font-size: 25px;
-   }
-
-   figure {
-   	display: inline-block;
-   	position:relative;
-   	width:350px;
-   	height:300px;
-   	overflow:hidden;
-   }
-   figcaption {
-   	position:absolute;
-   	padding:10px;
-   	margin:0;
-   	left:0;
-   	right:0;
-   	height:2.6em;
-   	bottom: -4em;
-   	text-align:center;
-   	font-family: Georgia, Times, serif;
-   	transition:all .7s;
-   	}
-   figure:hover figcaption{
-   	bottom:0;
-   	background: #000;
-   	background: rgba(255,255,255,0.7);
-   	color: #555;
-   }
-
-   .opportunity {
-     text-align: center;
-   }
-
-   .opportu {
-     width: 1350px;
-     height: 200px;
-   }
-
-   .giroptic {
-     width: 300px;
-     height: 300px;
-   }
-
-   .monaco {
-     width: 400px;
-     height: 300px;
-   }
-
-   .canada {
-     width: 340px;
-     height: 300px;
-   }
-
-   .pc {
-     width: 400px;
-     height: 300px;
-   }
-
-   .penseur {
-     width: 400px;
-     height: 300px;
-   }
-
-   .xbox {
-     width: 400px;
-     height: 300px;
-   }
-
-   /* DEBUT GLENN */
-   .principale_jeux{
-     width: 100%;
-     height: auto;
-     background-color: white;
-     /* on se place par rapport à la div proincipale */
-     position: relative;
-   }
-
-   .secondaires_jeux{
-     display: inline-block;
-     width: auto; /* 140px est suffisant */
-     height: auto;
-     margin-left: 3em;
-   }
-
-   .secondaires_jeux img {
-     width: 100px;
-     height: auto;
-   }
-   /* FIN GLENN */
 
    /*Debut SamM*/
    @keyframes AutoSlide {
@@ -248,19 +152,46 @@ textarea {
    	animation-timing-function: ease-in-out;
    }
    /*Fin SamM*/
-
-
-
-
-
-
-
-
-
-
-
-
-
+   h1, h2{
+     text-align: center;
+     font-size: 2,5em;
+   }
+  .ligne1 img{
+     width: 17em;
+   }
+   .principale_jeux img{
+     width: 8em;
+   }
+.principale_jeux{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: lightgrey;
+}
+figure{
+  display: inline-block;
+  position: relative;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+figcaption{
+  position: absolute;
+  padding: 10px;
+  margin: 0;
+  left: 0;
+  right: 0;
+  height: 2,6em;
+  bottom: -4em;
+  text-align: center;
+  transition: all 0,7s;
+}
+figure:hover figcaption{
+  bottom: 0;
+  background: #000000;
+  background: rgba(255, 255, 255, 0.7);
+  color: #555;
+}
 
 
 
