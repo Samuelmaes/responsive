@@ -94,7 +94,160 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   *
+   {
+     margin: 0px;
+   }
 
+   body {
+     font-family: 'Dosis', sans-serif;
+     color: #454545;
+     font-size: 20px;
+     background-color: white;
+   }
+
+   header {
+     text-align: center;
+     color: gray;
+     font-size: 25px;
+   }
+
+   figure {
+   	display: inline-block;
+   	position:relative;
+   	width:350px;
+   	height:300px;
+   	overflow:hidden;
+   }
+   figcaption {
+   	position:absolute;
+   	padding:10px;
+   	margin:0;
+   	left:0;
+   	right:0;
+   	height:2.6em;
+   	bottom: -4em;
+   	text-align:center;
+   	font-family: Georgia, Times, serif;
+   	transition:all .7s;
+   	}
+   figure:hover figcaption{
+   	bottom:0;
+   	background: #000;
+   	background: rgba(255,255,255,0.7);
+   	color: #555;
+   }
+
+   .opportunity {
+     text-align: center;
+   }
+
+   .opportu {
+     width: 1350px;
+     height: 200px;
+   }
+
+   .giroptic {
+     width: 300px;
+     height: 300px;
+   }
+
+   .monaco {
+     width: 400px;
+     height: 300px;
+   }
+
+   .canada {
+     width: 340px;
+     height: 300px;
+   }
+
+   .pc {
+     width: 400px;
+     height: 300px;
+   }
+
+   .penseur {
+     width: 400px;
+     height: 300px;
+   }
+
+   .xbox {
+     width: 400px;
+     height: 300px;
+   }
+
+   /* DEBUT GLENN */
+   .principale_jeux{
+     width: 100%;
+     height: auto;
+     background-color: white;
+     /* on se place par rapport à la div proincipale */
+     position: relative;
+   }
+
+   .secondaires_jeux{
+     display: inline-block;
+     width: auto; /* 140px est suffisant */
+     height: auto;
+     margin-left: 3em;
+   }
+
+   .secondaires_jeux img {
+     width: 100px;
+     height: auto;
+   }
+   /* FIN GLENN */
+
+   /*Debut SamM*/
+   @keyframes AutoSlide {
+   	0% {
+   		left: 0px; /*1ère image*/
+   	}
+   	15% {
+   		left: 0px; /*idem pour attente*/
+   	}
+   	35% {
+   		left: -271px; /*2ème image*/
+   	}
+   	50% {
+   		left: -271px; /*idem pour attente*/
+   	}
+   	70% {
+   		left: -542px; /*3ème image*/
+   	}
+   	85% {
+   		left: -542px; /*idem pour attente*/
+   	}
+   	100% {
+   		left: 0px; /*1ère image*/
+   	}
+   }
+   #slideshow {
+   	position: relative;
+   	width: 271px;
+   	height: 377px;
+   	margin:  20px auto;
+   	overflow: hidden;
+   }
+   #sContent li {
+   	display: inline;
+   }
+   #sContent {
+   	position: absolute;
+   	top: 0;
+   	left: 0;
+   	width: 813px;
+   	margin: 0;
+   	padding: 0;
+
+   	/*CSS3 keyframes animation*/
+   	animation-name: AutoSlide;
+   	animation-duration: 10s;
+   	animation-iteration-count: infinite;
+   	animation-timing-function: ease-in-out;
+   }
+   /*Fin SamM*/
 
 
 
